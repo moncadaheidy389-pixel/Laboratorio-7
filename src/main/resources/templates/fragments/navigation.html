@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <nav th:fragment="navigation" class="site-navigation" aria-label="Navegación principal">
+        <a class="brand" th:href="@{/}" href="/">PetMatch Mini</a>
+        <div class="navigation-links">
+            <a th:href="@{/}" href="/">Inicio</a>
+            <a th:href="@{/pets}" href="/pets">Mascotas</a>
+            <a th:href="@{/about}" href="/about">Acerca de</a>
+        </div>
+    </nav>
+</body>
+</html>

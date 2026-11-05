@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head('Acerca de | PetMatch Mini')}"></head>
+<body>
+    <nav th:replace="~{fragments/navigation :: navigation}"></nav>
+
+    <main class="page-container">
+        <section class="content-panel">
+            <h1>Acerca de PetMatch Mini</h1>
+            <p>Esta aplicación presenta un catálogo de mascotas de ejemplo.</p>
+            <p>Los datos se consultan mediante un servicio y se muestran con Thymeleaf.</p>
+            <a class="button-link" th:href="@{/pets}" href="/pets">Ver catálogo</a>
+        </section>
+    </main>
+</body>
+</html>
